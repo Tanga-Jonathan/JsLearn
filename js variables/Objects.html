@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is a sample</h1>
+    <div>
+        <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit error nobis suscipit earum ex blanditiis minus ratione omnis temporibus mollitia quibusdam, facilis, adipisci corporis eius illum possimus.
+        </p>
+        <button type="button">search</button>
+        <form action="">
+            jonant: <br>
+            input type = "text" elinya="" id=""  
+        </form>
+    </div>
+
+    <script>
+    /***These are objects
+        var a = new Object();
+        console.log(a);
+        var b = {};
+        console.log(b);
+
+        a.name = 'Kamajo';
+        console.log(a);
+        a.city = 'kampala';
+        a.age = 6;
+        console.log(a);
+        a.friends = ['A','B','C'];
+        console.log(a);
+        */
+    //Working with Json files
+        var user  = {
+            name:'Peter',
+            age:40,
+            country:'Uganda',
+            city: 'kampala',
+            pets:['t','y','u'],
+            profile:{
+                type:'private',
+                account:'premium'
+            }
+        };
+        console.log(user);
+        console.log(user.age);
+        console.log(user.city);
+        console.log(user.country);
+        console.log(user.name);
+        console.log(user.pets[2]);
+        console.log(user.profile);
+
+        /** so far we looked at one object console for 
+        however there is another way of accessing like
+        *window
+        *document
+        */
+
+    window.addEventListener('load',function(){ 
+            console.log('The page was loaded') 
+        }
+        );
+    window.addEventListener("load", function(){
+       
+        function search(){
+            console.log('I am listening');
+        }
+
+        var searchbut = document.getElementById('searchbut');
+        searchbut.addEventListener("click",search);
+    });    
+    </script>
+</body>
+</html>
